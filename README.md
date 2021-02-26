@@ -4,6 +4,7 @@ Basically the same as the nginx-ingress chart, but using a custom template to in
 
 <image src="./charts/README.md">
 
+----
 ## Additional Information
 
 ## Installing the Chart
