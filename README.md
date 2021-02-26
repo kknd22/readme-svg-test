@@ -2,7 +2,7 @@
 
 Basically the same as the nginx-ingress chart, but using a custom template to include some other content
 
-<image src="./charts/README.md">
+<image src="./image/fig.svg">
 
 ----
 ## Additional Information
