@@ -1,8 +1,18 @@
 #!/bin/bash
 set -e
 
+vdir=images/_v_dir
+tdir=images/_t_dir
+
+touch ${vdir}/values.yaml
+grep "version:" Chart.yaml  > ${vdir}/Chart.yaml
+
+touch ${tdir}/values.yaml
+grep "type:" Chart.yaml  > ${tdir}/Chart.yaml
+
 docker run --rm --volume "$(pwd):/helm-docs" -u $(id -u) jnorwood/helm-docs:latest 
 
-cp charts/README.md images/fig.svg
+mv ${vdir}/README.md images/version.svg
+mv ${tdir}/README.md images/type.svg
 
 git add . && git commit -m"mod" && git push
