@@ -1,20 +1,19 @@
 # custom-template
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square)
-
 Basically the same as the nginx-ingress chart, but using a custom template to include some other content
 
-**Homepage:** <https://github.com/norwoodj/helm-docs/tree/master/example-charts/custom-template>
+<image src="./charts/">
 
-## Maintainers
+## Additional Information
 
-| Name | Email | Url |
-| ---- | ------ | --- |
-| John Norwood | norwood.john.m@gmail.com |  |
+## Installing the Chart
 
-## Source Code
+To install the chart with the release name `my-release`:
 
-* <https://github.com/norwoodj/helm-docs/tree/master/example-charts/custom-template>
+```console
+$ helm repo add foo-bar http://charts.foo-bar.com
+$ helm install my-release foo-bar/custom-template
+```
 
 ## Requirements
 

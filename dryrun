@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+docker run --rm --volume "$(pwd):/helm-docs" -u $(id -u) jnorwood/helm-docs:latest  --dry-run
+
