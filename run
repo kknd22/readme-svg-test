@@ -4,4 +4,5 @@ set -e
 docker run --rm --volume "$(pwd):/helm-docs" -u $(id -u) jnorwood/helm-docs:latest 
 
 cp charts/README.md images/fig.svg
+
 git add . && git commit -m"mod" && git push
