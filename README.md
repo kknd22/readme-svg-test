@@ -1,21 +1,20 @@
-
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="20" role="img" aria-label="Version: 0.2.0"><title>Version: 0.2.0</title><g shape-rendering="crispEdges"><rect width="51" height="20" fill="#555"/><rect x="51" width="39" height="20" fill="#007ec6"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="265" y="140" transform="scale(.1)" fill="#fff" textLength="410">Version</text><text x="695" y="140" transform="scale(.1)" fill="#fff" textLength="290">0.2.0</text></g></svg>
 # custom-template
+
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square)
 
 Basically the same as the nginx-ingress chart, but using a custom template to include some other content
 
-<image src="./fig.svg">
+**Homepage:** <https://github.com/norwoodj/helm-docs/tree/master/example-charts/custom-template>
 
-## Additional Information
+## Maintainers
 
-## Installing the Chart
+| Name | Email | Url |
+| ---- | ------ | --- |
+| John Norwood | norwood.john.m@gmail.com |  |
 
-To install the chart with the release name `my-release`:
+## Source Code
 
-```console
-$ helm repo add foo-bar http://charts.foo-bar.com
-$ helm install my-release foo-bar/custom-template
-```
+* <https://github.com/norwoodj/helm-docs/tree/master/example-charts/custom-template>
 
 ## Requirements
 
