@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
 
-docker run --rm --volume "$(pwd):/helm-docs" -u $(id -u) jnorwood/helm-docs:latest
+docker run --rm --volume "$(pwd):/helm-docs" -u $(id -u) jnorwood/helm-docs:latest --template-files=./fig.svg.gotmpl --template-files=README.md.gotmpl
 
 git add . && git commit -m"mod" && git push
