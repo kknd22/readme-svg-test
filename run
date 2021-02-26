@@ -15,4 +15,7 @@ docker run --rm --volume "$(pwd):/helm-docs" -u $(id -u) jnorwood/helm-docs:late
 mv ${vdir}/README.md images/version.svg
 mv ${tdir}/README.md images/type.svg
 
+rm -rf ${vdir}/values.yaml ${vdir}/Chart.yaml
+rm -rf ${tdir}/values.yaml ${tdir}/Chart.yaml
+ 
 git add . && git commit -m"mod" && git push
